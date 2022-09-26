@@ -1,0 +1,123 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin:40px auto 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+table {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing:0 10px;
+}
+
+thead {
+    text-transform: uppercase;
+}
+
+code {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+}
+
+.light{
+    color:rgb(73,80,87);
+    background-color: rgb(233,236,239);
+    width:100px;
+}
+
+input {
+    font-size: 0.8em;
+    width: 80px;
+    border-radius: 20px;
+    padding:3px;
+}
+
+footer {
+    color: #808080;
+    text-align: center;
+    border-top: 1px solid #F8F8F8;
+    width: 100%;
+    letter-spacing: 0.2px;
+    padding: 20px 0 20px 0;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#buy_coffee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgb(244, 113, 255);
+    color: white;
+    border-radius: 32px;
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 4px 8px;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#thankyou_text{
+    position: fixed;
+    opacity: 1;
+    right: 102px;
+    bottom: 16px;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    width: auto;
+    max-width: 300px;
+    line-height: 1.5;
+    font-family: "Avenir Book1", "Avenir Book2", "Avenir Book3", "Avenir Book4", "Avenir Book5", "Avenir Book6", sans-serif;
+}
+
+
+
