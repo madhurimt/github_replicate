@@ -1,5 +1,6 @@
 *{
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -131,5 +132,17 @@ footer {
     max-width: 300px;
     line-height: 1.5;
     font-family: "Avenir Book1", "Avenir Book2", "Avenir Book3", "Avenir Book4", "Avenir Book5", "Avenir Book6", sans-serif;
+}
+
+/* Responsive design */
+
+@media screen and (max-width:768px){
+    .table tr, .table td, .table th, .table thead{
+        display: block;
+    }
+
+    .table tr:not(:last-child){
+        border-bottom:2px solid #808080;
+    }
 }
 
