@@ -1,19 +1,42 @@
 *{
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1;
     color: #212529;
     text-align: left;
     font-family: 'Poppins', sans-serif;
+    
+}
+
+:not(.skip-link):focus{
+    outline: 2px solid black;
+}
+
+.skip-link{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    background-color: #333;
+    color:white;
+    padding:.2rem;
+    translate: 0 -100%;
+    transition:  translate 150ms ease-in-out;
+}
+
+.skip-link:focus{
+    translate: 0;
 }
 
 .wrapper {
     width: 80%;
-    margin:40px auto 0;
+    margin:20px auto 0;
 }
 
 h1{
@@ -21,17 +44,18 @@ h1{
     font-size: 2.5rem;
     margin-bottom: .5rem;
     line-height: 1.2;
+    margin-top: 40px;
 }
 
 p{
     margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 table {
     overflow-x: auto;
     white-space: nowrap;
-    margin-top: 30px;
+    border-collapse: separate;
+    border-spacing:0 10px;
 }
 
 .table {
@@ -40,23 +64,14 @@ table {
     color: #212529;
 }
 
-.borderless td, .borderless th {
-    border: none;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing:0 10px;
-}
-
 thead {
     text-transform: uppercase;
+    line-height: 2;
 }
 
 code {
     font-size: 87.5%;
-    color: #e83e8c;
-    word-break: break-word;
+    color: #cd4080;
 }
 
 .light{
@@ -119,5 +134,15 @@ footer {
     font-family: "Avenir Book1", "Avenir Book2", "Avenir Book3", "Avenir Book4", "Avenir Book5", "Avenir Book6", sans-serif;
 }
 
+/* Responsive design */
 
+@media screen and (max-width:768px){
+    .table tr, .table td, .table th, .table thead{
+        display: block;
+    }
+
+    .table tr:not(:last-child){
+        border-bottom:2px solid #808080;
+    }
+}
 
