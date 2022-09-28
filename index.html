@@ -12,9 +12,10 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header-content">
       <a class="skip-link" href="#main-content">Skip to main content</a>
       <a class="skip-link" href="#footer-content">Skip to footer content</a>
+      <a class="skip-next-section" href="#main-content">Skip to next section</a>
       <div class="wrapper">
         <h1>💻 GitSheet</h1>
         <p>
@@ -27,6 +28,9 @@
       </div>
     </header>
     <main id="main-content">
+      <a class="skip-next-section" href="#footer-content"
+        >Skip to next section</a
+      >
       <div class="wrapper">
         <table class="table">
           <thead class="light">
@@ -485,6 +489,9 @@
       </div>
     </main>
     <footer id="footer-content">
+      <a class="skip-next-section" href="#header-content"
+        >Skip to next section</a
+      >
       <div>
         👋 Say hi!
         <a href="https://twitter.com/tiivik" target="_blank">@tiivik</a>
